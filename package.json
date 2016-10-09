@@ -1,0 +1,17 @@
+{
+  "name": "authenticator",
+  "version": "0.0.1",
+  "description": "Google Authentication application.",
+  "main": "server.js",
+  "author": "Jerry",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.13.4",
+    "method-override": "^2.1.3",
+    "mongoose": "^4.4.12",
+    "morgan": "^1.1.1"
+  }
+}

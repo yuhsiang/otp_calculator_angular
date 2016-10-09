@@ -1,0 +1,12 @@
+<p>These are your OTP</p>
+
+<div id="otps" ng-repeat="key in user.keys track by $index">
+ <otp-item ng-secret='{{key.key}}' ng-name='Name: {{key.name}}'  ng-interval='key.interval'></otp-item>
+ <button ng-click="removeOTP(key)">remove</button>
+</div>
+
+
+<input ng-model=inputName ng-trim=true placeholder="OTP Name"></input>
+<input ng-model=inputCode ng-trim=true placeholder="secret code"></input>
+<input ng-model=inputInterval ng-trim=true placeholder="Interval(unit=sec) i.e 30"></input>
+<button ng-click="addOTP()">Add OTP</button>

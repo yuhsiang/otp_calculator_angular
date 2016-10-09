@@ -1,0 +1,8 @@
+<div >
+   <ul id="users" ng-repeat="user in users track by $index">
+     <li><a ng-click="userClick(user)">{{user.text}}</a></li>
+   </ul>
+</div>
+
+<input ng-model=inputName ng-trim=true></input>
+<button ng-click="addUser()">Add user</button>

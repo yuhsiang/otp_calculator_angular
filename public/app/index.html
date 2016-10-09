@@ -1,0 +1,35 @@
+<html lang="en" ng-app="App" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#!/OTPView">User List</a></li>
+  </ul>
+  <div ng-view></div>
+
+  <div>My OTP app: v<span app-version></span></div>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="otp/OTPListCtrl.js"></script>
+  <script src="otp/OTPService.js"></script>
+  <script src="otp/OTPViewCtrl.js"></script>
+  <script src="userList/userListCtrl.js"></script>
+  <script src="userList/userListService.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  <script src="bower_components/jsSHA/src/sha.js"></script>
+  <script src="bower_components/angular-progress-arc/angular-progress-arc.js"></script>
+
+</body>
+</html>
