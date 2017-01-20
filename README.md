@@ -9,7 +9,7 @@ Use to calculate Google OTP
 
 ## Installation
 
-1. Clone the repository: `git clone git@github.com`
+1. Clone the repository: `git clone git@github.com:yuhsiang/otp_calculator_angular.git`
 2. Install the application: `npm install`
 3. Install bower: `bower install`
 4. Place your own MongoDB URI in `config/database.js`
